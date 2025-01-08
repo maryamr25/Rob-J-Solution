@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -73,7 +74,7 @@ export const RailwaySupplyLabor = (): React.ReactElement => (
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 ">
                     {CareerData.map((data, index) => (
                         <div key={index} className="mb-3">
-                            <img
+                            <Image
                                 src={data.image}
                                 alt=""
                                 width={300}

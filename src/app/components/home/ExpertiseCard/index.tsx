@@ -11,24 +11,28 @@ interface Expertise {
   title: string;
   image: string;
   description: string;
+  link: string
 }
 
 const data: Expertise[] = [
   {
     title: "Civil Engineering",
     image: "/images/expert1.png",
+     link: "/services/civilengineering",
     description:
       "We specialise in providing skilled and experienced personnel for civil engineering projects, including road construction, bridge refurbishment, excavation, and site preparation.",
   },
   {
     title: "Motorway",
     image: "/images/expert2.png",
+     link: "/services/motorway",
     description:
       "Our company excels in providing skilled workers for motorway projects, including road construction, maintenance, resurfacing, and safety barrier installation.",
   },
   {
     title: "Railway",
     image: "/images/expert3.png",
+    link: "/services/railway",
     description:
       "Our labor supply company provides highly trained and certified personnel for railway projects, including track installation, maintenance, signaling, and electrification.",
   },
@@ -62,7 +66,7 @@ const ExpertiseCard: React.FC = () => {
                         <div className="text-white !leading-loose">
                             {item?.description}
                         </div>
-                        {/* <Link href={`${routes.services}/${data?.id}`}> */}
+                        <Link href={item?.link}>
                             <button
                                 className={`w-[142px] group h-[40px] md:h-[49px] bg-transparent border border-white hover:border-orange-500 text-white text-sm font-normal sm:text-base hover:bg-orange-500 transition-all duration-500 flex justify-center items-center gap-2`}
                             >
@@ -71,7 +75,7 @@ const ExpertiseCard: React.FC = () => {
                                 </span>
                                 Lean More
                             </button>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div>

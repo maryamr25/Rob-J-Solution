@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { IoStarSharp } from 'react-icons/io5';
 
@@ -46,12 +47,12 @@ function TestimonialCard() {
     style={{
       gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Ensure consistent item width
     }}>
-        { reviews.map((review , index) => (
-            <div className=" w-full bg-white shadow-md hover:shadow-xl">
+        { reviews.map((review) => (
+            <div key={review.id} className=" w-full bg-white shadow-md hover:shadow-xl">
 
             <div className="relative w-full h-[216px] bg-lightBg flex justify-center items-center">
       
-            <img
+            <Image
                 
                 src={review?.image}
                 alt=""

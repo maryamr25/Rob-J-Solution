@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 interface Client {
@@ -31,11 +32,11 @@ function OurClients() {
     </div>
 
     <div className="resContainer flex flex-wrap justify-center gap-y-6 gap-x-10 sm:gap-x-16 lg:gap-x-24 p-10">
-    {ourclient.map((item , index)=> (
+    {ourclient.map((item)=> (
         <div
         key={item?.id}
         className=" flex justify-center items-center">
-            <img src={item.image} width={135} height={135} className='object-contain'/>
+            <Image  alt='' src={item.image} width={135} height={135} className='object-contain'/>
         </div>
     ))}
     </div>

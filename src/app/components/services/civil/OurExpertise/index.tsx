@@ -1,10 +1,11 @@
-// import { MImage, PrimaryButton, Typography } from '../../common';
+
 
 import React from 'react';
 import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
-// import { routes } from '@/app/utils/constants';
-// 
+import Image from 'next/image';
+
+ 
 export const OurExpertise = (): React.ReactElement => (
     <section className="py-10 sm:py-20 bg-no-repeat bg-contain md:bg-[center_top_250px] lg:bg-[center_top_280px] xl:bg-[center_top_245px]">
         <div className="resContainer">
@@ -33,12 +34,13 @@ export const OurExpertise = (): React.ReactElement => (
           </Link>
                 </div>
                 <div className="order-1 lg:order-2">
-                    <img
-                        src='/images/services/civilExpertiese.png'
+                    <Image
+                        src="/images/services/civilExpertiese.png"
                         alt="Project"
-                        className="w-full"
-                        width={700}
+                        
+                        width={500}
                         height={350}
+                        // className="w-full"
                     />
                 </div>
             </div>

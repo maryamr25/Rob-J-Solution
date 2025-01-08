@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
+import Image from 'next/image';
 // import { routes } from '@/app/utils/constants';
 // 
 export const RailwayOurExpertise = (): React.ReactElement => (
@@ -33,7 +34,7 @@ export const RailwayOurExpertise = (): React.ReactElement => (
           </Link>
                 </div>
                 <div className="order-1 lg:order-2">
-                    <img
+                    <Image
                         src='/images/expert1.png'
                         alt="Project"
                         className="w-full"

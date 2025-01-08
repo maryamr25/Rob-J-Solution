@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 // import { mImages } from '../../../../../../public/images';
 import { socials } from '../MiniNav';
+import Image from 'next/image';
 // import { routes } from '@/app/utils/constants';
 
 interface ILink {
@@ -72,7 +73,7 @@ export const Footer = (): React.ReactElement => {
                 </div>
                 <hr className="border-b border-secondary opacity-15 my-8" />
                 <div className="flex justify-center sm:justify-between items-center flex-wrap gap-5">
-                    <img src='/images/footerLogo.svg' alt="Logo" width={56} height={53} />
+                    <Image src='/images/footerLogo.svg' alt="Logo" width={56} height={53} />
                     <ul className="flex gap-x-10">
                         {['Terms', 'Privacy', 'Cookies'].map((link, i) => (
                             <li key={i}>

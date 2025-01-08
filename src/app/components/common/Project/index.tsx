@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Project() {
@@ -19,7 +20,7 @@ function Project() {
                       to provide a strong and durable base. Finally, we applied
                       a high-quality paint to ensure a long-lasting and
                       resilient finish.The combination of these treatments not
-                      only restored the bridge's aesthetic appeal but also
+                      only restored the bridges aesthetic appeal but also
                       significantly enhanced its structural integrity and
                       longevity. We are proud of the results and confident that
                       the bridge will continue to serve its purpose effectively
@@ -27,7 +28,7 @@ function Project() {
                     </p>
                   </div>
                   <div className="order-1 lg:order-2 lg:ml-auto">
-                    <img
+                    <Image
                       alt="Project"
                    
                       width={566}

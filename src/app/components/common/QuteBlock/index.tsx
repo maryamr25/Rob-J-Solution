@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useState } from 'react'
 import { MdArrowOutward } from 'react-icons/md';
 
@@ -15,12 +16,12 @@ function QuteBlock() {
     
       const [error, setError] = useState("");
     
-      const handleChange = (e : any) => {
+      const handleChange = (e : React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
       };
     
-      const handleSubmit = (e : any) => {
+      const handleSubmit = (e : React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     
         // Basic validation
@@ -38,7 +39,7 @@ function QuteBlock() {
 
         <div className='resContainer bg-primary p-4  md:p-8 flex  flex-col md:flex-row  items-center gap-5 md:gap-8 '>
             <div>
-                <img src='/images/quote.png'  alt='image'  width={501}  height={487} />
+                <Image src='/images/quote.png'  alt='image'  width={501}  height={487} />
                        
             </div>
 

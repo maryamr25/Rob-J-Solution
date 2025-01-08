@@ -15,7 +15,7 @@ const FAQ = () => {
     <div className='resContainer'>
         <div className='w-full max-w-[962px] mx-auto flex flex-col gap-1.5 sm:gap-3 items-center  '>
            <div className='text-lg font-medium font-serif text-center text-primary'>
-           FAQ's
+           FAQs
             </div> 
 
             <div className='text-2xl font-semibold font-serif'>

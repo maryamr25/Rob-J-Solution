@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 function Features() {
@@ -20,7 +21,7 @@ function Features() {
                                     key={index}
                                 >
                                     <div className="w-[35px]">
-                                        <img
+                                        <Image
                                             src={feature.icon}
                                             alt="Gurantee"
                                             width={35}

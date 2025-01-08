@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -65,7 +66,7 @@ export const WhyChooseCard = (): React.ReactElement => (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
                     {CareerData.map((data, index) => (
                         <div key={index} className="mb-3">
-                            <img
+                            <Image
                                 src={data.image}
                                 alt=""
                                 width={269}

@@ -59,6 +59,7 @@
     
 
 
+import Image from "next/image";
 import React from "react";
 
 interface ITeamMember {
@@ -89,12 +90,12 @@ export const OurTeamCard = ({
   name,
   designation,
   image,
-  id,
+  
   onUpdate,
 }: ITeamMember): React.ReactElement => {
   return (
     <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center">
-      <img
+      <Image
         src={image}
         alt={name}
         width={100}
