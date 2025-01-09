@@ -19,13 +19,13 @@ function AboutHero() {
             <Link href='/'> Home </Link> {">"} <Link href='/aboutus'>About us</Link>
            </div>
 
-           <div className="flex flex-col  gap-y-4 md:gap-y-8 w-full max-w-[566px]  text-left  ">
+           <div className="flex flex-col  gap-y-4 md:gap-y-5 w-full max-w-[566px]  text-left  ">
                     <div  className="md:text-4xl font-serif text-2xl font-bold text-white !leading-snug">
                     Engineering
                 <span className="text-primary"> Excellence </span>
                 for a <br /> Sustainable Future
                     </div>
-                    <div  className="  md:font-medium md:text-2xl text-lg   text-white">
+                    <div  className="  md:font-medium md:text-1xl text-lg   text-white">
                     Rob J Solution is a leading provider of engineering solutions specialising in railways, civil construction, and motorways. Based in London ,UK. We are committed to delivering innovative, high-quality, and sustainable infrastructure projects that enhance connectivity and community living.
                     </div>
                    
