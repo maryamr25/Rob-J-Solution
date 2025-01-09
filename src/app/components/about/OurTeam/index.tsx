@@ -94,7 +94,7 @@ export const OurTeamCard = ({
   onUpdate,
 }: ITeamMember): React.ReactElement => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center">
+    <div className="bg-white text-secondary shadow-md rounded-lg p-4 flex flex-col items-center text-center">
       <Image
         src={image}
         alt={name}

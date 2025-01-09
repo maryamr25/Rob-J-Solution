@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/website/Navbar";
 import { Footer } from "../components/website/Footer";
 import { MiniNav } from "../components/website/MiniNav";
+import { DarkModeProvider } from "../components/darkmode/DarkModeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      > */}
+    <body 
+    // className=" text-secondary scroll-smooth" 
+    >
+      <DarkModeProvider/>
         <MiniNav/>
         <Navbar/>
         {children}

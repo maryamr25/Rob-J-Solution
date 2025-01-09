@@ -76,7 +76,7 @@ export const WhyChooseCard = (): React.ReactElement => (
                             <div className="pt-2">
                                 <div
                                     
-                                    className="text-secondary font-serif text-lg font-semibold py-2"
+                                    className=" font-serif text-lg font-semibold py-2"
                                 >
                                     {data.title}
                                 </div>

@@ -5,7 +5,7 @@ function HomeOurExperties() {
   return (
     <section className="py-8 md:py-20">
             <div className="resContainer">
-                <div className="w-full max-w-[962px] mx-auto flex flex-col gap-4 items-center">
+                <div className="w-full  max-w-[962px] mx-auto flex flex-col gap-4 items-center">
                     <div
                         
                         className="text-center font-serif text-1xl md:text-2xl  text-primary"
@@ -14,7 +14,7 @@ function HomeOurExperties() {
                     </div>
                     <div
                        
-                        className="text-center font-semibold md:text-3xl text-2xl "
+                        className="text-center  font-semibold md:text-3xl text-2xl "
                     >
                         Our expertise lies in delivering tailored workforce
                         solutions, ensuring the right talent for every project

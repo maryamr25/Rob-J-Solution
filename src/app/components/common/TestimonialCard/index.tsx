@@ -62,7 +62,7 @@ function TestimonialCard() {
             />
        
     </div>
-    <div className="p-5 flex flex-col gap-3 sm:gap-5">
+    <div className="p-5 text-secondary flex flex-col gap-3 sm:gap-5">
         <div className="flex flex-col sm:gap-1 italic">
             <div  className='font-medium text-lg '>
                 {review?.clientName}
@@ -71,7 +71,7 @@ function TestimonialCard() {
                 {review?.clientDesignation}
             </div>
         </div>
-        <div className="italic text-secondary">
+        <div className="italic ">
             {typeof review?.description !== 'undefined' &&
             review?.description?.length > 380
                 ? `${review?.description?.substring(0, 380)}...`

@@ -11,7 +11,7 @@ function Features() {
   return (
     <>
    {/* Features section */}
-<section className="sm:-mt-12 md:-mt-24 z-10 relative">
+<section className="sm:-mt-12 md:-mt-24 z-10 relative text-secondary">
                 <div className="resContainer"> 
                     <div className="bg-white  lg:mx-28 md:mx-24 mx-4 shadow-md  px-8 py-7 flex flex-row flex-wrap justify-center lg:flex-nowrap gap-8 lg:justify-between">
                         {featuresData.map((feature, index) => (

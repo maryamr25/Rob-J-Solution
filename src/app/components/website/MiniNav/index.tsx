@@ -24,7 +24,7 @@ export const socials = [
 ];
 
 export const MiniNav = (): React.ReactElement => (
-    <section className="hidden md:block h-[46px] bg-lightBg">
+    <section className="hidden md:block h-[46px] bg-lightBg text-secondary">
         <div className="resContainer h-full flex justify-between items-center">
             <div className="flex gap-4">
                 {socials.map((social, index) => (

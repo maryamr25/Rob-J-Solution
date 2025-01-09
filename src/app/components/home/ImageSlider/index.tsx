@@ -10,7 +10,7 @@ function ImageSlider() {
 
     const slides = [
         {id:1 , images:'/images/services/civilExpertiese.png'},
-        {id:2 , images:'/images/expert1.png '},
+        {id:2 , images:'/images/expert1.png'},
         {id:3 , images:'/images/supply1.png'}
     ]
 
@@ -29,8 +29,9 @@ className={`h-full bg-no-repeat bg-cover bg-center before:contents-[] before:abs
        
 
         <Image src={slides[current].images} alt='images' width={300} height={300} 
-        // className={`h-[390px] sm:h-[450px] md:h-screen w-full bg-no-repeat bg-cover bg-center before:contents-[] before:absolute before:inset-0 before:bg-black/60 before:z-0 z-10 relative`} 
-        className = 'w-full h-full bg-no-repeat bg-cover bg-center'/>
+        className={`h-[390px] sm:h-[450px] md:h-screen w-full bg-no-repeat bg-cover bg-center before:contents-[] before:absolute before:inset-0 before:bg-black/60 before:z-0 z-10 relative`} 
+        // className = 'w-full h-full bg-no-repeat bg-cover bg-center'
+        />
         </div>
         </div>
         

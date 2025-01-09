@@ -11,14 +11,14 @@ const FAQ = () => {
           setOpenIndex(openIndex === index ? null : index);
         }
   return (
-    <section className='py-10 md:py-20'>
+    <section className='py-10 md:py-20 '>
     <div className='resContainer'>
         <div className='w-full max-w-[962px] mx-auto flex flex-col gap-1.5 sm:gap-3 items-center  '>
            <div className='text-lg font-medium font-serif text-center text-primary'>
            FAQs
             </div> 
 
-            <div className='text-2xl font-semibold font-serif'>
+            <div className='text-2xl  font-semibold font-serif'>
                 Frequently Ask Questions
             </div>
         </div>
@@ -26,7 +26,7 @@ const FAQ = () => {
 
  {/* single Faqs */}
 
-<div className="resContainer py-6 sm:py-10 bg-no-repeat bg-contain bg-center text-lg font-medium" >
+<div className="resContainer text-secondary py-6 sm:py-10 bg-no-repeat bg-contain bg-center text-lg font-medium" >
       {faqs.map((faq, index) => (
         <SingleFaq
           key={index}
